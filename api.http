@@ -1,0 +1,28 @@
+### 1. TEST SERVER
+GET http://localhost:5000/
+
+### 2. GET ALL TASKS
+GET http://localhost:5000/api/tasks
+
+### 3. CREATE NEW TASK
+POST http://localhost:5000/api/tasks
+Content-Type: application/json
+
+{
+  "title": "Test Task",
+  "description": "Created from REST Client",
+  "priority": "High"
+}
+
+### 4. UPDATE TASK (replace :id with real ID)
+PUT http://localhost:5000/api/tasks/6918c4e26246da1e3449b596
+Content-Type: application/json
+
+{
+  "title": "Updated Task",
+  "completed": true
+}
+
+
+### 5. DELETE TASK (replace :id)
+DELETE http://localhost:5000/api/tasks/6918c4e26246da1e3449b596
