@@ -24,7 +24,7 @@ Setup:
 Environment Variables:
  Create a .env file:
  PORT=5000
- MONGO_URI=<your-mongodb-connection-url>
+ MONGO_URI=mongodb+srv://<username>:<password>@<cluster-url>/<database>?retryWrites=true&w=majority
 
 Start Server:
   npm start
