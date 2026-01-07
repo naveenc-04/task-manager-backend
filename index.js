@@ -20,7 +20,7 @@ const Task = require("./models/Task");
 
 // ROUTES
 app.get("/", (req, res) => {
-  res.send("Task Manager Backend Running...");
+  res.send("Task Manager API is running");
 });
 
 // Get all tasks
